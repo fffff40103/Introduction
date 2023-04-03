@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+header {
+  padding: 1rem;
+  background-color: rgb(192, 192, 192);
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header h1 i {
+  font-size: 3rem;
+}
+
+nav {
+  background-color: #3b383c;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: flex;
+}
+nav ul li a {
+  text-decoration: none;
+  padding: 1.25rem;
+  color: rgb(192, 192, 192);
+  font-size: 1.25rem;
+}
+
+.active {
+  color: white;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+section.container {
+  display: flex;
+}
+
+section.special {
+  padding-top: 2rem;
+}
+
+img.mypicture {
+  width: 25vh;
+  height: 25vh;
+  border-radius: 50%;
+  margin: auto;
+  padding: 2rem;
+}
+
+section.right {
+  padding-top: 3rem;
+  padding-right: 2.5rem;
+}
+
+@media screen and (max-width: 550px) {
+  nav ul {
+    flex-direction: column;
+  }
+}

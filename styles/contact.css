@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+header nav {
+  width: 100%;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  width: 80%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2rem 4rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main section.form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 70vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+}
+
+main section.form form div label {
+  font-size: 1.5rem;
+}
+
+main section.form form div input,
+main section.form form div textarea {
+  background-color: #e08958;
+  color: white;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  border: none;
+  width: 30vw;
+}
+
+main section.form form div textarea {
+  vertical-align: top;
+}
+
+main section.form form button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 10rem;
+  background-color: #e08958;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 2.5rem;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+
+main section.line {
+  width: 3px;
+  background-color: gray;
+}
+
+main div.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+main div.right div.content h2 {
+  margin: 1rem 0rem;
+}
+
+footer a {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 1100px) {
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav ul li {
+    border-bottom: 2px solid gray;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

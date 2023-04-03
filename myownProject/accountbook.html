@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./account.css" />
+  </head>
+  <body>
+    <form action="">
+      <select name="category" id="category" placeholder="類別">
+        <option value="排餐">排餐</option>
+        <option value="飲料">飲料</option>
+        <option value="速食">速食</option>
+        <option value="日常生活用品">日常生活用品</option>
+        <option value="其他">其他</option>
+      </select>
+      <input type="text" placeholder="商家" />
+      <input type="text" placeholder="消費名稱" />
+      <input type="number" placeholder="輸入年分" />
+      <input type="number" placeholder="一月輸入1" />
+      <input type="number" placeholder="輸入日" />
+      <input type="number" placeholder="消費金額" />
+      <button type="submit">Add into list</button>
+    </form>
+    <div class="middle">
+      <h1>花費總金額</h1>
+      <h1 class="totalCost"></h1>
+      <div class="expense"></div>
+      <div class="sort">
+        <button type="submit">sort by time</button>
+      </div>
+    </div>
+
+    <section class="list">
+      <table>
+        <tr>
+          <th>類別</th>
+          <th>商家</th>
+          <th>消費名稱</th>
+          <th>消費日期</th>
+          <th>消費金額</th>
+          <th>操作</th>
+        </tr>
+      </table>
+    </section>
+  </body>
+  <script src="./account.js"></script>
+</html>

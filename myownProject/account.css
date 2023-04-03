@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+i {
+  pointer-events: none;
+}
+
+form {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+form input,
+form button,
+form select {
+  font-size: 1.25rem;
+  margin: 0.75rem 1rem;
+  background-color: white;
+  text-align: center;
+}
+
+.done {
+  text-decoration: line-through;
+  opacity: 0.5;
+  text-decoration-thickness: 0.2rem;
+}
+
+div.middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1rem;
+}
+
+div.middle button {
+  margin-top: 0.75rem;
+  font-size: 1.5rem;
+  background-color: aqua;
+  padding: 1rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+section.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.list table tr {
+  font-size: 1.5rem;
+}
+
+section.list table tr th {
+  color: black;
+  font-weight: 1500px;
+  padding: 2rem 5rem;
+}
+
+section.list table tr td {
+  color: black;
+  padding: 0rem 5rem;
+  text-align: center;
+}
+
+section.list table tr td.td6 button {
+  font-size: 2rem;
+  padding: 0.25rem 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+section.list table tr td.td6 button.compelete {
+  background-color: green;
+}
+
+section.list table tr td.td6 button.trash {
+  background-color: red;
+}
+
+@media screen and (max-width: 1600px) {
+  form input,
+  form button,
+  form select {
+    margin: 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  table {
+    width: 100vw;
+  }
+  table tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  table tr td {
+    margin: 0.75rem 0rem;
+  }
+}
+/*# sourceMappingURL=account.css.map */

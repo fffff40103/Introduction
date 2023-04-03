@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.active {
+  color: #e08958;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  width: 95%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2rem 4rem;
+}
+
+header nav ul li {
+  font-size: 2rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.left {
+  padding: 2rem;
+  -webkit-box-flex: 4;
+      -ms-flex: 4 1 500px;
+          flex: 4 1 500px;
+}
+
+main section.left table {
+  border-collapse: collapse;
+}
+
+main section.left table .intro {
+  border-top: 2px solid gray;
+}
+
+main section.left table tr {
+  border-bottom: 2px solid gray;
+}
+
+main section.left table tr:hover {
+  background-color: #e08958;
+}
+
+main section.left table tr td {
+  padding: 1rem;
+}
+
+main section.right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+  position: relative;
+}
+
+main section.right img {
+  width: 20vw;
+}
+
+main section.right div.retangle {
+  width: 20vw;
+  height: 50vh;
+  background-color: #e08958;
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  z-index: -1;
+}
+
+.python {
+  width: 2.5vw;
+  height: 2.5vw;
+  padding-left: 0.5rem;
+}
+
+@media screen and (max-width: 1100px) {
+  header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  header nav ul li {
+    padding: 1rem;
+  }
+  section.right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section.right img {
+    width: 50vw;
+  }
+  section.right div.retangle {
+    display: none;
+  }
+}
+
+footer a {
+  padding: 1rem;
+}
+/*# sourceMappingURL=resume.css.map */

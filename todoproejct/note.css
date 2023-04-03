@@ -1,0 +1,226 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+i {
+  pointer-events: none;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#8082ff), to(#ff64ff));
+  background: linear-gradient(90deg, #8082ff, #ff64ff);
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 20vh;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* Firefox */
+}
+
+form input,
+form button {
+  font-size: 1.75rem;
+  margin: 0.2rem;
+  padding: 0.25rem 0.5rem;
+}
+
+form input[type="number"] {
+  width: 50px;
+  text-align: center;
+}
+
+form input::-webkit-outer-spin-button,
+form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+form button {
+  cursor: pointer;
+  background-color: red;
+  color: white;
+}
+
+form input.price {
+  width: 100px;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section div.todo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0.2rem 0rem;
+  width: 30vw;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+section div.todo p {
+  font-size: 2.5rem;
+  background-color: white;
+  padding: 0.25rem 0.5rem;
+  color: black;
+  font-weight: 600;
+}
+
+section div.todo button {
+  font-size: 2.5rem;
+  padding: 0.25rem 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+section div.todo button.compelete {
+  background-color: green;
+}
+
+section div.todo button.trash {
+  background-color: red;
+}
+
+.done {
+  text-decoration: line-through;
+  opacity: 0.5;
+  text-decoration-thickness: 0.2rem;
+}
+
+@-webkit-keyframes scaleDown {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes scaleDown {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@-webkit-keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+div.sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.sort button {
+  cursor: pointer;
+  background-color: #009272;
+  color: white;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 2rem;
+  margin: 1rem 0rem;
+}
+
+@media screen and (max-width: 360px) {
+  form input {
+    margin: 1rem;
+    width: 100vw;
+  }
+  form button {
+    margin: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header h1 {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=note.css.map */
