@@ -71,9 +71,9 @@ add.addEventListener("click", (e) => {
     todoMonth: todoMonth,
     todoDate: todoDate,
   };
-
   // store data into an array of objects
   let myList = localStorage.getItem("list");
+  console.log(myList)
   if (myList == null) {
     localStorage.setItem("list", JSON.stringify([myTodo]));
   } else {
@@ -82,7 +82,6 @@ add.addEventListener("click", (e) => {
     localStorage.setItem("list", JSON.stringify(myListArray));
   }
 
-  console.log(JSON.parse(localStorage.getItem("list")));
 
   form.children[0].value = ""; // CLEAR THE TEXT INPUT
   section.appendChild(todo);
