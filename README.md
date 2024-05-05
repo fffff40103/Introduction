@@ -1,4 +1,4 @@
-# introduction
+# Introduction
 [關於我](https://scottintroduce.netlify.app/)
 
 ## 首頁
