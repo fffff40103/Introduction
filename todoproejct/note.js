@@ -91,6 +91,7 @@ loadData();
 
 function loadData() {
   let myList = localStorage.getItem("list");
+
   if (myList !== null) {
     let myListArray = JSON.parse(myList);
     myListArray.forEach((item) => {
